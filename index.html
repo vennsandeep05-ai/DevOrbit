@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOrbit | Learn. Build. Grow.</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 22px;
+      background: #151d35;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #65a8ff;
+      font-size: 30px;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 45px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: #b8c4dc;
+      line-height: 1.6;
+    }
+
+    .card {
+      background: #151d35;
+      padding: 25px;
+      margin-top: 25px;
+      border-radius: 14px;
+      text-align: left;
+    }
+
+    button {
+      background: #2878ed;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin-top: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #155bc0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DevOrbit</h1>
+    <p>Learn. Build. Grow.</p>
+  </header>
+
+  <main>
+    <h2>Welcome to DevOrbit</h2>
+    <p>Your journey from programming beginner to developer starts here.</p>
+
+    <div class="card">
+      <h2>C Programming</h2>
+      <p>Learn C programming step by step, practise assignments,
+      build projects and test your knowledge.</p>
+      <button onclick="startLearning()">Start Learning</button>
+      <p id="message"></p>
+    </div>
+  </main>
+
+  <script>
+    function startLearning() {
+      document.getElementById("message").textContent =
+        "Your C programming journey starts here!";
+    }
+  </script>
+
+</body>
+</html>
